@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
+import Menu from 'primevue/menu'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.component('Menu', Menu)
+
+
+app.mount('#app')
